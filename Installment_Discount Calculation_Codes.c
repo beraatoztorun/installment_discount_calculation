@@ -6,13 +6,13 @@
 int main (void){
 	int fiyatTutar,taksitMiktari;
 	char kullaniciCevabi;
-	srand(time(NULL));
+	srand(time(NULL)); // rastgele sayi uretimi icin
 	fiyatTutar=rand()%2000;
 	printf("Yaptiginiz alisveris tutari:%d TL\n",fiyatTutar);
 	printf("Taksit ister misiniz(E-H):");
 	kullaniciCevabi=getchar();
 	if(kullaniciCevabi=='E'){
-		printf("Kac taksit uygulanmasini istersiniz(3-6-9):");
+		printf("Uygulamak istediginiz taksit miktarini seciniz(3-6-9):");
 		scanf("%d",&taksitMiktari);
 		switch(taksitMiktari){
 			case 3:
